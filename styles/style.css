@@ -1,0 +1,220 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* shared styles  */
+
+.primary-description{
+    color: rgb(157 149 149);
+    margin: 10px 0;
+}
+
+.primary-btn{
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(255, 81, 13);
+    padding: 10px 60px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* header section starts here  */
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title{
+    color: rgb(255, 81, 13);
+    font-size: 2rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-small{
+    display: none;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+}
+
+.menu .menu-first a{
+    background-color: rgb(255, 81, 13);
+    font-weight: 700;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-image: url('../assets/banner.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-color: #1a1818;
+    background-blend-mode: overlay;
+    border-radius: 10px;
+}
+
+.banner > div{
+    width: 50%;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.banner-title-span{
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.banner-btn-last{
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+}
+
+
+.banner-box{
+    padding: 10px 0;
+    background-color: #1a1818;
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.banner-box-first{
+    margin-left: 250px;
+}
+
+.banner-box-last{
+    margin-top: 250px;
+}
+
+.banner-span-first{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.banner-span-last{
+    font-size: 0.8rem;
+}
+
+
+.habit{
+    text-align: center;
+    margin: 70px 0;
+}
+
+
+.habit-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.habit-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.habit-card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.habit-card-title{
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Habit section starts here  */
+
+
+
+
+
+/* Responsive Styles  */
+
+/* header responsive styles  */
+
+@media screen and (max-width: 576px) {
+
+    /* sharede styles responsive  */
+
+    body{
+        width: 95%;
+    }
+
+    .primary-btn{
+        padding: 10px 20px;
+        font-weight: 400;
+    }
+
+    /* Header styles responsive  */
+    .menu{
+        display: none;
+    }
+
+    .navbar .menu-small{
+        display: block;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner > div{
+        width: 100%;
+    }
+
+    .banner-box-first {
+        margin-left: 150px;
+    }
+
+    /* Habit section styles responsive  */
+    .habit-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
