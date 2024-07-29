@@ -287,6 +287,49 @@ table tbody td{
     font-size: 0.9rem;
 }
 
+.bmi-form-fields{
+    margin-top: 30px;
+}
+
+.form-row{
+    margin-bottom: 15px;
+}
+
+.form-row input{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+select{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 140px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+option{
+    color: whitesmoke;
+    background-color: gray;
+}
+
+#activity{
+    width: calc(100% - 20px);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-btn{
+    padding: 15px 70px;
+}
+
 /* team section starts here  */
 
 .team{
@@ -489,7 +532,46 @@ footer{
     .run-image{
         padding: 20px;
     }
+
+
+    /* bmi section styles responsive  */
+
+
+    .bmi-content{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .bmi-chart{
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+    }
     
+    .form-row input{
+        padding: 10px 0px 10px 10px;
+    }
+
+    select{
+        padding: 10px 100px 10px 10px;
+    }
+
+    option{
+        padding-right: 0;
+    }
+
+    #activity{
+        width: 100%;
+        padding: 10px 50px 10px 10px;
+    }
+
+    .form-btn{
+        padding: 15px 70px;
+    }
+
     /* team section styles responsive */
 
     .team{

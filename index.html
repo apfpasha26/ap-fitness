@@ -114,6 +114,35 @@
                     <div class="bmi-input">
                         <h4 class="secondary-title">Calculate your BMI</h4>
                         <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        <div class="bmi-form-fields">
+                            <div class="form-row">
+                                <label for="height"></label>
+                                <input type="text" id="height" placeholder="Height/Cm">
+                                <label for="weight"></label>
+                                <input type="text" id="weight" placeholder="Weight/Kg">
+                            </div>
+                            <div class="form-row">
+                                <label for="age"></label>
+                                <input type="age" id="age" placeholder="Age">
+                                <select id="sex" name="gender" required>
+                                    <option value="gender" disabled selected>Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <select id="activity" name="activity" required>
+                                    <option value="gender" disabled selected>Select an activity factor</option>
+                                    <option value="walking">Walking</option>
+                                    <option value="weight-lifting">Weight Lifting</option>
+                                    <option value="cycling">Cycling</option>
+                                    <option value="swimming">Swimming</option>
+                                </select>
+                                
+                            </div>
+                            <button class="form-btn primary-btn">Calculate</button>
+                        </div>
                     </div>
                 </div>
                 
