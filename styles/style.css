@@ -88,7 +88,7 @@ body{
     gap: 20px;
 }
 
-.menu-small{
+.navbar i{
     display: none;
 }
 
@@ -145,7 +145,7 @@ body{
 }
 
 .banner-image{
-    padding: 50px;
+    padding: 95px 50px;
     background-image: url('../assets/Images\ 2.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -168,6 +168,9 @@ body{
 }
 
 .banner-box-last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
@@ -179,6 +182,16 @@ body{
 
 .banner-span-last{
     font-size: 0.8rem;
+}
+
+.banner-span-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
 }
 
 /* Habit section starts here  */
@@ -245,6 +258,100 @@ body{
 .run-image img{
     width: 100%;
     border-radius: 15px;
+}
+
+
+/* schedule section starts here  */
+
+.schedule{
+    width: 80%;
+    margin: 70px auto;
+}
+
+.schedule-info{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.schedule-days ul, .schedule-days-small ul{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.schedule-days-small{
+    display: none;
+}
+
+.schedule-days li, .schedule-days-small li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.schedule-day-one{
+    background-color: rgb(230, 83, 60);
+}
+
+.schedule-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: none;
+}
+
+.schedule-item{
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 40px;
+}
+
+.schedule-item:nth-child(4n) {
+    border-right: none;
+}
+
+.schedule-item:nth-child(n+5):nth-child(-n+8) {
+    border-bottom: none;
+}
+
+.schedule-item .schedule-icon{
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #f2f0ff;
+}
+
+.schedule-item img{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.schedule-item h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.schedule-item .trainer{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.schedule-item .class-time{
+    display: inline-block;
+    background-color: rgb(230, 83, 60);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 
@@ -482,7 +589,7 @@ footer{
         display: none;
     }
 
-    .navbar .menu-small{
+    .navbar i{
         display: block;
     }
 
@@ -532,6 +639,62 @@ footer{
     .run-image{
         padding: 20px;
     }
+
+
+
+    /* schedule section styles responsive  */
+
+    .schedule {
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .schedule-days ul{
+        display: none;
+    }
+
+    .schedule-days-small {
+        display: block;
+    }
+
+    .schedule-days-small ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .schedule-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .schedule-item:nth-child(n+5):nth-child(-n+8) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .schedule-item .schedule-icon{
+        border-radius: 45px;
+    }
+
+    .schedule-item img{
+        height: 70px;
+        width: 70px;
+    }
+
+    .schedule-item h5{
+        font-size: 2rem;
+    }
+
+    .schedule-item .trainer{
+        font-size: 1.5rem;
+    }
+
+    .schedule-item .class-time {
+        font-size: 1.25rem;
+        padding: 10px 25px;
+        border-radius: 20px;
+    }
+
+
 
 
     /* bmi section styles responsive  */

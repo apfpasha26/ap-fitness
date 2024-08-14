@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP Fitness</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="inter-font">
     <header class="header">
@@ -17,23 +18,27 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
-                <i class="menu-small">Hi</i>
+                <i class="menu-small fa-solid fa-bars"></i>
             </nav>
             <section class="banner">
                 <div class="banner-content">
                     <h1 class="banner-title">Get body in <span class="banner-title-span dancing-script-font">shape</span> & stay healthy</h1>
-                    <p class="primary-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam, dolorum mollitia porro magni fugit?</p>
+                    <p class="primary-description">Achieve your fitness goals and maintain a healthy lifestyle with effective workouts, balanced nutrition, and sustainable habits.</p>
                     <button class="primary-btn">Join Club Now!</button>
                     <button class="primary-btn banner-btn-last">Download App</button>
                 </div>
                 <div class="banner-image">
-                    <p class="banner-box banner-box-first">
+                    <div class="banner-box banner-box-first">
                         <span class="banner-span-first">500+</span> <br> <span class="banner-span-last primary-description">Free Workshop Videos</span>
-                    </p>
-                    <p class="banner-box banner-box-last">
-                        <!-- <span class="banner-span-circle"></span> -->
-                        <span class="banner-span-first">350+</span> <br> <span class="banner-span-last primary-description">Videos Tutorial</span>
-                    </p>
+                    </div>
+                    <div class="banner-box banner-box-last">
+                        <div>
+                            <span class="banner-span-circle"><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div>
+                            <span class="banner-span-first">350+</span> <br> <span class="banner-span-last primary-description">Videos Tutorial</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -42,45 +47,139 @@
         <section class="habit">
             <div class="habit-info">
                 <h3 class="habit-title primary-title">Change Your Habits</h3>
-                <p class="primary-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid enim, praesentium officiis assumenda aut?</p>
+                <p class="primary-description">Transform your life by adopting positive habits that lead to lasting change and personal growth.</p>
             </div>
             <div class="habit-content">
                 <div class="habit-card">
                     <img src="assets/image 3.png" alt="" class="habit-image">
                     <h5 class="habit-card-title">Movement</h5>
-                    <p class="primary-description">Labore tempore ipsam incidunt facere quam eum impedit.</p>
+                    <p class="primary-description">Stay active, energized, and strong.</p>
                 </div>
                 <div class="habit-card">
                     <img src="assets/image 2.png" alt="" class="habit-image">
                     <h5 class="habit-card-title">Time</h5>
-                    <p class="primary-description">Labore tempore ipsam incidunt facere quam eum impedit.</p>
+                    <p class="primary-description">Optimize your time for success.</p>
                 </div>
                 <div class="habit-card">
                     <img src="assets/image 4.png" alt="" class="habit-image">
                     <h5 class="habit-card-title">Practice</h5>
-                    <p class="primary-description">Labore tempore ipsam incidunt facere quam eum impedit.</p>
+                    <p class="primary-description">Consistency and dedication lead to mastery.</p>
                 </div>
                 <div class="habit-card">
                     <img src="assets/image 5.png" alt="" class="habit-image">
                     <h5 class="habit-card-title">Weight Loss</h5>
-                    <p class="primary-description">Labore tempore ipsam incidunt facere quam eum impedit.</p>
+                    <p class="primary-description">Shed pounds effectively with balanced nutrition and regular exercise.</p>
                 </div>
             </div>
         </section>
         <section class="run">
             <div class="run-info">
                 <h3 class="run-title primary-title">Run an Extra Mile Easily</h3>
-                <p class="run-description primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <p class="run-description primary-description">Effortlessly extend your running distance with our proven techniques and training plans for enhanced endurance and performance.</p>
                 <button class="primary-btn run-btn">Join Now</button>
             </div>
             <div class="run-image">
                 <img src="assets/run.jpg" alt="">
             </div>
         </section>
+        <section class="schedule">
+            <div class="schedule-info">
+                <h2 class="primary-title schedule-title">Our Class Schedule</h4>
+                <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="schedule-days">
+                <ul>
+                    <li class="schedule-day-one">Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                </ul>
+            </div>
+            <div class="schedule-days-small">
+                <ul>
+                    <li class="schedule-day-one">Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li>
+                </ul>
+            </div>
+            <div class="schedule-items">
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/cardio.png" alt="">
+                    </div>
+                    <h5>Cardio</h5>
+                    <p class="trainer">Rachel Adam</p>
+                    <p class="class-time">06AM-07AM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/weight-loss.png" alt="">
+                    </div>
+                    <h5>Weight Loss</h5>
+                    <p class="trainer">Rachel Adam</p>
+                    <p class="class-time">07AM-08AM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/yoga.png" alt="">
+                    </div>
+                    <h5>Yoga</h5>
+                    <p class="trainer">Rachel Adam</p>
+                    <p class="class-time">08AM-09AM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/crossfit.png" alt="">
+                    </div>
+                    <h5>Crossfit</h5>
+                    <p class="trainer">Keaf Shen</p>
+                    <p class="class-time">10AM-11AM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/boxing.png" alt="">
+                    </div>
+                    <h5>Boxing</h5>
+                    <p class="trainer">Keaf Shen</p>
+                    <p class="class-time">11AM-12PM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/karate.png" alt="">
+                    </div>
+                    <h5>Karate</h5>
+                    <p class="trainer">Keaf Shen</p>
+                    <p class="class-time">12PM-01PM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/body-building.png" alt="">
+                    </div>
+                    <h5>Body Building</h5>
+                    <p class="trainer">Lefew D. Loee</p>
+                    <p class="class-time">02pM-03PM</p>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="icons/aeroskip.png" alt="">
+                    </div>
+                    <h5>Aeroskip</h5>
+                    <p class="trainer">Lefew D. Loee</p>
+                    <p class="class-time">04PM-05PM</p>
+                </div>
+            </div>
+        </section>
         <section class="bmi">
             <div class="bmi-info">
                 <h2 class="primary-title bmi-title">BMI Calculator</h4>
-                <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p class="primary-description">Easily track your health with a BMI calculator, measuring body mass index to assess weight status and fitness goals.</p>
             </div>
             <div class="bmi-content-container">
                 <div class="bmi-content">
@@ -113,7 +212,7 @@
                     </div>
                     <div class="bmi-input">
                         <h4 class="secondary-title">Calculate your BMI</h4>
-                        <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        <p class="primary-description">Quickly determine your Body Mass Index (BMI) to understand your health and weight status accurately. </p>
                         <div class="bmi-form-fields">
                             <div class="form-row">
                                 <label for="height"></label>
@@ -144,14 +243,13 @@
                             <button class="form-btn primary-btn">Calculate</button>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </section>
         <section class="team">
             <div class="team-info">
                 <h3 class="team-title primary-title">Meet Our Team</h3>
-                <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p class="primary-description">Get to know our dedicated team of professionals, passionate about delivering exceptional service and expertise in every project we undertake.</p>
             </div>
             <div class="team-images">
                 <div class="team-image team-image-1">
@@ -178,8 +276,8 @@
     <footer class="footer">
         <section class="footer-content">
             <div class="footer-links">
-                <h1 class="footer-title">Fitness</h1>
-                <p class="primary-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <h1 class="footer-title">AP Fitness</h1>
+                <p class="primary-description">AP Fitness offers personalized fitness solutions with innovative programs, expert guidance, and cutting-edge equipment to achieve your health goals.</p>
             </div>
             <div class="footer-links">
                 <h4 class="footer-links-title secondary-title">Get Started</h4>
@@ -198,7 +296,7 @@
         </section>
         <section class="footer-copyright">
             <hr>
-            <p class="primary-description footer-copyright-text">All right reserved @Fitness 2024</p>
+            <p class="primary-description footer-copyright-text">All right reserved @AP Fitness 2024</p>
         </section>
     </footer>
 </body>
